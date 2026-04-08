@@ -1,0 +1,106 @@
+
+.dashboard-app {
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(circle at 12% 8%, rgba(119,217,255,.08) 0%, transparent 34%),
+    radial-gradient(circle at 88% 16%, rgba(215,180,106,.1) 0%, transparent 36%),
+    linear-gradient(180deg, #06080d 0%, #0a111a 44%, #070c14 100%);
+  color: #edf3ff;
+  font-family: 'Barlow', sans-serif;
+}
+.dashboard-sidebar {
+  width: 260px;
+  background: #10131a;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0 0 0;
+  border-right: 1px solid #23272f;
+  min-height: 100vh;
+}
+.sidebar-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: .18em;
+  color: #b6c6e3;
+  margin-left: 2rem;
+  margin-bottom: 1.2rem;
+}
+.sidebar-section {
+  color: #6c768a;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  margin: 1.2rem 0 0.2rem 2rem;
+}
+.sidebar-link {
+  display: block;
+  width: 90%;
+  margin: 0.2rem auto;
+  background: none;
+  border: none;
+  color: #b6c6e3;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar-link.active, .sidebar-link:hover {
+  background: linear-gradient(90deg, #23272f 60%, #1e2a36 100%);
+  color: #fff;
+}
+.sidebar-logout {
+  margin: 2rem 1.2rem 1.2rem 1.2rem;
+  background: linear-gradient(90deg, #f7e7b4, #e6c97a);
+  color: #181c23;
+  border: none;
+  padding: 0.7rem 2.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0002;
+  transition: background 0.2s;
+}
+.dashboard-main {
+  flex: 1;
+  padding: 0 2.5vw;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+#dashboard-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: .04em;
+  color: #fff;
+  margin: 0;
+}
+.dashboard-header-desc {
+  color: #b6c6e3;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.dashboard-bell {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #f7e7b4;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+#dashboard-content {
+  width: 100%;
+  min-height: 60vh;
+}
+
